@@ -1,15 +1,13 @@
-package testcases;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class TC003 
+public class TC003 extends BaseTest
 {
 	@Test
-	public void deleteuser()
+	public void deleteUser()
 	{
 		
+		
 	}
-	
-	
-
 }
