@@ -2,11 +2,19 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-public class TC004 
+import pages.homePage;
+import pages.viewTimeTrackPage;
+
+public class TC004 extends BaseTest
 {
 	@Test
 	public void selectuser()
 	{
+		homePage homePage=new homePage(driver, webActionUtil);
+		viewTimeTrackPage viewTT=homePage.clickOnViewTimeTrackPage();
+		
+		viewTT.clickOnExportToPDF();
+		viewTT.clickOnDownloadPDF();
 		
 	}
 
