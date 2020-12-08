@@ -1,13 +1,19 @@
 package testcases;
 
 import org.testng.annotations.Test;
+import pages.homePage;
+import pages.viewTimeTrackPage;
 
-public class TC004 
+public class TC004 extends BaseTest
 {
 	@Test
-	public void deleteUser()
+	public void selectuser()
 	{
-		system.out.println("Done with adding the method")
-	}
-
-}
+		homePage homePage=new homePage(driver, webActionUtil);
+		viewTimeTrackPage viewTT=homePage.clickOnViewTimeTrackPage();
+		
+		viewTT.clickOnExportToPDF();
+		viewTT.clickOnDownloadPDF();
+    }
+  }
+		
